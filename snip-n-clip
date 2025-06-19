@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TMP_IMG="/tmp/ocr_$(date +%s).png"
+TMP_IMG="/tmp/ocr.png"
 gnome-screenshot -a -f "$TMP_IMG" >/dev/null 2>&1 && \
 tesseract "$TMP_IMG" - -l eng 2>/dev/null | wl-copy && \
 notify-send "Snip-n-Clip" "Text copied to clipboard!" >/dev/null 2>&1

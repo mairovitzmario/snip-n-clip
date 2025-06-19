@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gnome-screenshot -a -f /tmp/ss.png && wl-copy < /tmp/ss.png && \
+notify-send -a "Snipping Tool" "Success!" "Image copied to clipboard!"  >/dev/null 2>&1

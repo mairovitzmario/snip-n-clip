@@ -1,4 +1,4 @@
 #!/bin/bash
 
-gnome-screenshot -a -f /tmp/ss.png && wl-copy < /tmp/ss.png && \
-notify-send -a "Snipping Tool" "Success!" "Image copied to clipboard!"  >/dev/null 2>&1
+gnome-screenshot -a -f /tmp/ss.png && wl-copy < /tmp/ss.png 
+notify-send -i  "object-select-symbolic" -a "Snipping Tool" "Success!" "Image copied to clipboard!"  >/dev/null 2>&1
